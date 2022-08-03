@@ -6,7 +6,7 @@ export default defineConfig({
   title: '网格画像',
   model: {},
   request: {
-    dataField: ''
+    dataField: '',
   },
   favicons: ['/favicon.ico'],
   headScripts: [`/config.js`],
@@ -22,4 +22,3 @@ export default defineConfig({
   ],
   npmClient: 'yarn',
 });
-

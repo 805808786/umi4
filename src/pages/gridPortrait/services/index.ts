@@ -1,6 +1,9 @@
 import { request } from '@umijs/max';
 
-// todo: params 类型应该在 namespace API 中声明
-export async function getGridListPaging(data?: { id?: string | number; pageIndex?: number; pageSize?: number; }) {
+export async function loginByZZD(data: LoginByZZD) {
+  return request('/User/LoginByFuli', { method: 'POST', data });
+}
+
+export async function getGridListPaging(data: GetGridListPaging) {
   return request('/GridPortrait/GetGridListPaging', { method: 'POST', data });
 }
